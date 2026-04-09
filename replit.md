@@ -25,3 +25,36 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## TrustCart AI+ App
+
+### Purpose
+Privacy-first AI e-commerce platform with "Amethyst & Obsidian" glassmorphism design.
+
+### Features
+- Mood-based AI recommendations (Energetic / Chill / Professional / Party)
+- SecureSync Vault privacy control center
+- AI Analytics Dashboard with Recharts (accuracy, categories, trust scores)
+- Cart, Wishlist, Orders management
+- User preference personalization
+- Privacy Pulse Indicator in navbar
+
+### Design System
+- Theme: dark charcoal (#0F172A), purple-to-blue gradients
+- Fonts: Plus Jakarta Sans (headings), Inter (body)
+- Glassmorphism utilities: `glass-card`, `glass-strong`
+- Animations: Framer Motion throughout
+- Icons: Lucide React (no emojis)
+
+### Auth
+- Cookie-based (`userId` cookie), SHA-256 hashed passwords
+- No JWT — simple server-side auth middleware
+
+### Database
+- 16 products seeded across categories: Clothing, Footwear, Electronics, Accessories, Beauty
+- Tables: users, products, cart, wishlist, orders, preferences
+
+### API
+- Base: `artifacts/api-server` on port 8080
+- Frontend: `artifacts/trustcart` (Vite)
+- Generated hooks: `@workspace/api-client-react`

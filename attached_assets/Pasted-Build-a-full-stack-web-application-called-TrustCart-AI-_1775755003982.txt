@@ -1,0 +1,317 @@
+Build a full-stack web application called "TrustCart AI+ – Privacy-First Personalization Engine".
+
+Tech Stack:
+
+* Frontend: React + Tailwind CSS + Framer Motion + Chart.js
+* Backend: Flask (Python REST API)
+* Database: MongoDB
+
+---
+
+CORE IDEA
+
+An AI-powered e-commerce platform that delivers personalized recommendations while ensuring ethical data storage, privacy, and security.
+
+---
+
+🎨 DESIGN SYSTEM: "Amethyst & Obsidian"
+
+1. Color Palette:
+
+* Background: Deep Charcoal (#0F172A)
+* Gradient accents: Purple → Blue (Amethyst to Electric Blue)
+
+2. Glassmorphism Style:
+
+* Use: bg-white/10, backdrop-blur-md, border-white/20
+* Soft shadows and rounded corners
+
+3. Typography:
+
+* Headings: Plus Jakarta Sans
+* Body: Inter
+
+4. UI Feel:
+
+* Futuristic, premium AI platform
+* Smooth animations (Framer Motion)
+* Micro-interactions everywhere
+
+---
+
+🌐 GLOBAL UI COMPONENTS
+
+1. Floating Navbar (Glass Pill Design)
+
+* Sticky, rounded, glass effect
+* Links: Home, Vault, Dashboard, Profile
+* Privacy Pulse Indicator:
+
+  * Green dot = tracking ON
+  * Amber dot = anonymous mode
+
+2. Global Microcopy:
+
+* “Your preferences are locked in the Vault”
+* “Anonymous Mode Active: Your browsing stays on this device only”
+
+---
+
+📄 FRONTEND PAGES
+
+1. Login & Signup Page
+
+* Clean glass UI
+* Email/password
+* Guest mode option
+* Message:
+  “We respect your privacy. Your data stays secure.”
+
+---
+
+2. Home Page (Infinity Grid)
+
+Hero Section:
+
+* Mesh gradient background
+* Title: “What’s your vibe today?”
+* Mood chips:
+
+  * ⚡ Energetic
+  * 🌙 Chill
+  * 💼 Professional
+  * 🎉 Party
+
+Product Grid:
+
+* Glass cards
+* Each card includes:
+
+  * Image, price, rating
+  * AI badge
+  * Privacy Badge (shield icon if local data used)
+
+AI Section:
+
+* Title with gradient text:
+  “Recommended for You”
+
+Real-time updates:
+
+* Clicking preferences reorders products instantly
+
+Skeleton Loaders:
+
+* Shimmer effect while loading recommendations
+
+---
+
+3. Product Listing Page
+
+* Filters (price, rating, trust score)
+* Smooth animations on filtering
+* Grid layout
+
+---
+
+4. Product Detail Page (Insight Panel)
+
+Include:
+
+* Product details (image, price, description)
+
+* Trust Score Visualizer:
+
+  * Circular progress bar (Chart.js)
+
+* Regret % Widget:
+  “3% of users returned this product”
+
+* Explainable AI:
+  “Recommended because you liked ‘Yellow Silk’ + Summer preference”
+
+* Related Products section
+
+---
+
+5. Cart Page
+
+* Add/remove items
+* Total calculation
+* Glass UI cards
+
+---
+
+6. Checkout Page
+
+* Address form
+* Order summary
+
+---
+
+7. User Profile Page
+
+* Preferences (color, style, category)
+* Clicking preferences updates recommendations instantly
+* Order history
+
+---
+
+8. Wishlist Page
+
+* Saved products
+
+---
+
+9. AI Dashboard Page
+
+Show:
+
+* Recommendation accuracy
+* User preference analytics
+* Charts (Chart.js)
+
+---
+
+10. 🔐 SecureSync Vault Page (MAIN FEATURE)
+
+Design like a futuristic control room:
+
+1. Encryption Matrix Animation:
+
+* Animated hex code background
+* Displays “Hashed User ID”
+
+2. Data Toggle:
+
+* Large iOS-style toggle
+* ON = Personalized Mode
+* OFF = Anonymous Mode
+
+3. Frosted Overlay:
+
+* When OFF → blur charts (data hidden)
+
+4. Clear Data Button:
+
+* Red bordered glass button
+* Clicking shows dissolve animation
+
+5. Display:
+
+* Local Storage vs Cloud Sync status
+* Encryption status
+
+---
+
+11. Settings Page
+
+* Dark mode toggle
+* Privacy controls
+
+---
+
+🧠 BACKEND (Flask APIs)
+
+Create:
+
+1. Authentication APIs
+
+* Register
+* Login
+
+2. Recommendation API
+
+* Input: product, color, mood
+* Output: recommended items
+
+3. Preferences API
+
+* Save and fetch preferences
+
+4. Cart API
+
+---
+
+🔐 SECURITY IMPLEMENTATION
+
+1. Encryption:
+
+* Use Python cryptography (Fernet)
+
+2. Integrity:
+
+* SHA-256 hashing
+
+3. Store in MongoDB:
+   {
+   user_id,
+   encrypted_data,
+   hash
+   }
+
+4. Verification:
+
+* Check hash before decrypting
+
+---
+
+💾 HYBRID STORAGE SYSTEM
+
+Guest Users:
+
+* Store data in localStorage
+
+Logged-in Users:
+
+* Store encrypted data in MongoDB
+
+Sync:
+
+* On login → move local data to database
+
+---
+
+🤖 AI PERSONALIZATION
+
+Simple logic:
+
+* Match products by:
+
+  * Color
+  * Category
+  * User preferences
+
+Example:
+yellow top → blue jeans + white shoes
+
+---
+
+⚡ REAL-TIME ADAPTATION
+
+* Use React state/hooks
+* Update UI instantly when preferences change
+
+---
+
+📊 MEASURABLE IMPACT
+
+Show:
+
+* Engagement metrics
+* Recommendation success rate
+
+---
+
+🎯 FINAL GOAL
+
+Build a visually stunning, privacy-first AI platform that:
+
+* Understands user preferences
+* Gives personalized recommendations
+* Works across devices
+* Protects user data
+* Adapts in real time
+* Demonstrates measurable value
+
+Make it hackathon-winning, futuristic, and highly interactive.
